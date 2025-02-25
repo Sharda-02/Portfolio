@@ -16,7 +16,7 @@
         header {
             background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: #fff;
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
             position: relative;
         }
@@ -25,18 +25,18 @@
             height: 120px;
             border-radius: 50%;
             position: absolute;
-            top: 30px;
+            top: 20px;
             left: 50%;
             transform: translateX(-50%);
             border: 4px solid #fff;
         }
         header h1 {
             font-size: 3em;
-            margin: 100px 0 0;
+            margin: 140px 0 0;
         }
         header h2 {
             font-size: 1.5em;
-            margin-top: 15px;
+            margin-top: 20px;
         }
         .container {
             max-width: 1100px;
