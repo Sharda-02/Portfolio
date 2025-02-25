@@ -4,113 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sharda Yadav - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #e3f2fd, #bbdefb);
             color: #333;
         }
         header {
-            background-color: #333;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: #fff;
-            padding: 20px;
+            padding: 60px 20px;
             text-align: center;
+            position: relative;
         }
-        h1 {
-            margin-bottom: 10px;
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 4px solid #fff;
         }
-        section {
-            padding: 20px;
+        header h1 {
+            font-size: 3em;
+            margin: 100px 0 0;
+        }
+        header h2 {
+            font-size: 1.5em;
+            margin-top: 15px;
         }
         .container {
-            max-width: 960px;
-            margin: 0 auto;
+            max-width: 1100px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
-        .project {
+        .section-title {
+            text-align: center;
+            font-size: 2em;
             margin-bottom: 20px;
-            border: 1px solid #ddd;
-            padding: 10px;
+            color: #1e3c72;
         }
-        .project h3 {
-            margin-top: 0;
+        .project, .skills {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            background: #f9f9f9;
+            transition: 0.3s;
+        }
+        .project:hover, .skills:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
         .skills {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
         }
         .skill {
-            margin-right: 10px;
-            margin-bottom: 10px;
-            padding: 5px 10px;
-            background-color: #eee;
+            margin: 8px;
+            padding: 10px 18px;
+            background: #1e3c72;
+            color: white;
             border-radius: 5px;
+            font-weight: bold;
         }
         footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
+            background: #1e3c72;
+            color: white;
             text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 1.1em;
         }
     </style>
 </head>
 <body>
-
     <header>
+        <img src="profile.jpg" alt="Sharda Yadav" class="profile-pic">
         <h1>Sharda Yadav</h1>
-        <h2>Backend Developer</h2>
+        <h2>Backend Developer | Problem Solver</h2>
     </header>
 
-    <section>
-        <div class="container">
-            <h3>Profile Summary</h3>
-            <p>Enthusiastic and resourceful Computer Science graduate with a solid academic background in programming and software development. Adept at learning new technologies quickly, with a passion for solving complex problems efficiently. Eager to contribute to a dynamic team as a Junior Software Developer, bringing a strong work ethic, excellent collaboration skills, and a proactive approach to tackling technical challenges.</p>
+    <div class="container">
+        <h3 class="section-title">Profile Summary</h3>
+        <p>Passionate Backend Developer with a strong background in programming, problem-solving, and software development. Proficient in modern backend technologies with a keen interest in scalable and efficient software solutions.</p>
 
-            <h3>Academic Projects</h3>
-
-            <div class="project">
-                <h3>Jarvis Automation</h3>
-                <p><strong>Tools:</strong> python, Speech Recognition library, WebDriver, OS</p>
-                <p>Jarvis is an automation project which helps us to make our life more easy and easy access to our system in our day to day life.</p>
-                <p><strong>Responsibilities:</strong> Designed the outmost layer of this project. Developed a feature where it runs the code as soon as a laptop boots up.</p>
-            </div>
-
-            <div class="project">
-                <h3>Security Camera</h3>
-                <p><strong>Tools:</strong> python, OpenCV, play sound</p>
-                <p>A security camera tool is very helpful around the house as well as for your own privacy. It captures and makes an alert sound if someone breaks into your laptop. It also captures the face of the intruder.</p>
-                <p><strong>Responsibilities:</strong> Designed and implemented the architecture of the project. Developed the protocols for capturing and making sound. Uses facial recognition for the facial identity.</p>
-            </div>
-
-            <h3>Academic Details</h3>
-            <p><strong>Master of Computer Application (MCA)</strong> - Galgotia University, Noida (Pursuing)</p>
-            <p><strong>Bachelor of Computer Application (BCA)</strong> - Microtek College of Management, Varanasi</p>
-
-            <h3>Technical Skills</h3>
-            <div class="skills">
-                <div class="skill">Java</div>
-                <div class="skill">Python</div>
-                <div class="skill">Go</div>
-                <div class="skill">SQL</div>
-                <div class="skill">MySQL</div>
-                <div class="skill">Data Structures and Algorithms</div>
-                <div class="skill">Agile Methodologies</div>
-                <div class="skill">Software Development Life Cycle</div>
-                <div class="skill">Problem Solving</div>
-                <div class="skill">Debugging</div>
-                </div>
-
-            <h3>Contact</h3>
-            <p>Email: sharda9696018592@gmail.com</p>
-            <p>Phone: 8726701002</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/sharda-yadav-713925272">sharda-yadav-713925272</a></p>
+        <h3 class="section-title">Academic Projects</h3>
+        <div class="project">
+            <h3>Jarvis Automation</h3>
+            <p><strong>Tools:</strong> Python, Speech Recognition, WebDriver, OS</p>
+            <p>Developed an AI assistant for automating daily system tasks efficiently.</p>
         </div>
-    </section>
+        <div class="project">
+            <h3>Security Camera</h3>
+            <p><strong>Tools:</strong> Python, OpenCV, Facial Recognition</p>
+            <p>Built a security system that detects intruders and alerts the user.</p>
+        </div>
+
+        <h3 class="section-title">Technical Skills</h3>
+        <div class="skills">
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">Go</div>
+            <div class="skill">SQL</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Data Structures</div>
+            <div class="skill">Agile Development</div>
+            <div class="skill">Debugging</div>
+        </div>
+
+        <h3 class="section-title">Contact</h3>
+        <p>Email: <a href="mailto:sharda9696018592@gmail.com">sharda9696018592@gmail.com</a></p>
+        <p>Phone: 8726701002</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sharda-yadav-713925272">Sharda Yadav</a></p>
+    </div>
 
     <footer>
-        <p>&copy; 2024 Sharda Yadav</p>
+        <p>&copy; 2024 Sharda Yadav | All Rights Reserved</p>
     </footer>
-
 </body>
 </html>
