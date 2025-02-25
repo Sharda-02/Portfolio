@@ -16,7 +16,7 @@
         header {
             background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: #fff;
-            padding: 80px 20px;
+            padding: 100px 20px 60px;
             text-align: center;
             position: relative;
         }
@@ -32,11 +32,11 @@
         }
         header h1 {
             font-size: 3em;
-            margin: 140px 0 0;
+            margin-top: 160px;
         }
         header h2 {
             font-size: 1.5em;
-            margin-top: 20px;
+            margin-top: 15px;
         }
         .container {
             max-width: 1100px;
